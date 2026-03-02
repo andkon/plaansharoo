@@ -1,0 +1,7 @@
+# macOS filesystem metadata
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+Icon?

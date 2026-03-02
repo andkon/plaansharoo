@@ -1,14 +1,38 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Plaansh a Roo Films Inc.</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="images/favicon.ico">
     </head>
     <body>
-        <div class="svg-container">
-            <img src="images/par-full.svg" class="logo"/>
-        </div>
-        <h1>Making films, skating boards</h1>
-        <h3>andrew at plaansharoo.com</h3>
+        <main class="page-container" id="pageContainer">
+            <section class="page page-screen" id="slide-logo" aria-label="Plaansh a Roo projection screen">
+                <div class="film-frame" id="filmFrame">
+                    <a href="#slide-info" class="slide-link" id="nextSlideLink" aria-label="Go to next slide">
+                        <div class="logo-stage" id="logoStage">
+                            <img src="images/par-full.svg" class="logo logo-halo" alt="" aria-hidden="true">
+                            <img src="images/par-full.svg" class="logo logo-main" alt="Plaansh a Roo Films logo">
+                            <img src="images/par-full.svg" class="logo logo-trail trail-a" alt="" aria-hidden="true">
+                            <img src="images/par-full.svg" class="logo logo-trail trail-b" alt="" aria-hidden="true">
+                            <img src="images/par-full.svg" class="logo logo-trail trail-c" alt="" aria-hidden="true">
+                        </div>
+                    </a>
+                    <div class="global-bloom-layer" aria-hidden="true"></div>
+                    <canvas class="grain-layer" id="grainLayer" aria-hidden="true"></canvas>
+                    <div class="flicker-layer" aria-hidden="true"></div>
+                </div>
+            </section>
+
+            <section class="page page-info" id="slide-info" aria-label="Plaansh a Roo contact details" tabindex="-1">
+                <div class="info">
+                    <h1>Making films, skating boards</h1>
+                    <h3>andrew at plaansharoo.com</h3>
+                </div>
+            </section>
+        </main>
+        <script src="js/film-effect.js" defer></script>
     </body>
 </html>
