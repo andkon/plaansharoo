@@ -72,9 +72,9 @@
         drawNoise();
 
         if (!reduceMotion) {
-            var x = (Math.random() - 0.5) * 1.8;
-            var y = (Math.random() - 0.5) * 1.2;
-            var rotate = (Math.random() - 0.5) * 0.12;
+            var x = (Math.random() - 0.5) * 0.9;
+            var y = (Math.random() - 0.5) * 0.55;
+            var rotate = (Math.random() - 0.5) * 0.05;
             frame.style.transform = "translate3d(" + x.toFixed(2) + "px," + y.toFixed(2) + "px,0) rotate(" + rotate.toFixed(3) + "deg)";
         }
 
