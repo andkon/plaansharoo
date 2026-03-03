@@ -11,7 +11,7 @@
         <main class="page-container" id="pageContainer">
             <section class="page page-screen" id="slide-logo" aria-label="Plaansh a Roo projection screen">
                 <div class="film-frame" id="filmFrame">
-                    <a href="#slide-info" class="slide-link" id="nextSlideLink" aria-label="Go to next slide">
+                    <a href="#slide-video" class="slide-link" id="nextSlideLink" aria-label="Go to next slide">
                         <div class="logo-stage" id="logoStage">
                             <img src="images/par-full.svg" class="logo logo-halo" alt="" aria-hidden="true">
                             <img src="images/par-full.svg" class="logo logo-main" alt="Plaansh a Roo Films logo">
@@ -26,6 +26,42 @@
                 </div>
             </section>
 
+            <section class="page page-video" id="slide-video" aria-label="Plaansh a Roo trailer" tabindex="-1">
+                <div class="video-layout">
+                    <div class="video-shell">
+                        <iframe
+                            src="https://player.vimeo.com/video/902374126?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            title="Plaansh a roo trailer"
+                        ></iframe>
+                    </div>
+
+                    <header class="video-meta">
+                        <h2 class="video-title">Plaansh a roo</h2>
+                        <p class="video-support">
+                            Produced with support from imagineNative, Canada Council for the Arts,
+                            Ontario Arts Council, and the Indigenous Screen Office.
+                        </p>
+                        <div class="laurel-grid" aria-label="Film festival laurels">
+                            <div class="laurel-slot laurel-slot-image">
+                                <img src="images/laurel-1.png" class="laurel-image" alt="Film festival laurel 1">
+                            </div>
+                            <div class="laurel-slot laurel-slot-image">
+                                <img src="images/laurel-2.png" class="laurel-image" alt="Film festival laurel 2">
+                            </div>
+                            <div class="laurel-slot laurel-slot-image">
+                                <img src="images/laurel-3.png" class="laurel-image" alt="Film festival laurel 3">
+                            </div>
+                            <div class="laurel-slot laurel-slot-image">
+                                <img src="images/laurel-4.png" class="laurel-image" alt="Film festival laurel 4">
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </section>
+
             <section class="page page-info" id="slide-info" aria-label="Plaansh a Roo contact details" tabindex="-1">
                 <div class="info">
                     <h1>Making films, skating boards</h1>
@@ -33,6 +69,7 @@
                 </div>
             </section>
         </main>
+        <script src="https://player.vimeo.com/api/player.js" defer></script>
         <script src="js/film-effect.js" defer></script>
     </body>
 </html>

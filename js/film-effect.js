@@ -4,7 +4,7 @@
     var logoStage = document.getElementById("logoStage");
     var pageContainer = document.getElementById("pageContainer");
     var nextSlideLink = document.getElementById("nextSlideLink");
-    var nextSlide = document.getElementById("slide-info");
+    var nextSlide = document.getElementById("slide-video") || document.getElementById("slide-info");
 
     if (!frame || !canvas) {
         return;
