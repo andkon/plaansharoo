@@ -339,15 +339,24 @@ body {
 }
 
 .trail-a {
-    filter: var(--logo-tint) hue-rotate(118deg) saturate(3.3) blur(1.5px) brightness(1.35);
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(70%)
+        sepia(52%)
+        saturate(4240%)
+        hue-rotate(186deg)
+        brightness(1.06)
+        contrast(1.08)
+        blur(1.5px);
 }
 
 .trail-b {
-    filter: var(--logo-tint) hue-rotate(-88deg) saturate(3) blur(1.4px) brightness(1.8);
+    filter: brightness(0) invert(1) blur(1.35px) saturate(0.08) brightness(1.26);
 }
 
 .trail-c {
-    filter: var(--logo-tint) hue-rotate(24deg) saturate(1.35) blur(1.9px) brightness(1.7);
+    filter: var(--logo-tint) blur(1.55px) saturate(1.34) brightness(1.56);
 }
 
 .grain-layer,
@@ -441,16 +450,7 @@ h3 {
 
 @keyframes logo-phaser-stage {
     0% {
-        transform: scale(0.78);
-    }
-    62% {
-        transform: scale(1.06);
-    }
-    72% {
-        transform: scale(0.97);
-    }
-    82% {
-        transform: scale(1.02);
+        transform: scale(0.76);
     }
     100% {
         transform: scale(1);
@@ -459,23 +459,14 @@ h3 {
 
 @keyframes logo-phaser-main {
     0% {
-        transform: scale(0.66);
-        filter: var(--logo-tint) blur(2.8px) brightness(1.62);
-        opacity: 0.12;
+        transform: scale(0.7);
+        filter: var(--logo-tint) blur(2.2px) brightness(1.56);
+        opacity: 0.2;
     }
-    24% {
-        opacity: 1;
-    }
-    60% {
-        transform: scale(1.1);
-        filter: var(--logo-tint) blur(0.62px) brightness(1.28);
-    }
-    70% {
-        transform: scale(0.97);
-        filter: var(--logo-tint) blur(0.34px) brightness(1.52);
-    }
-    82% {
-        transform: scale(1.02);
+    46% {
+        transform: scale(0.9);
+        filter: var(--logo-tint) blur(1px) brightness(1.24);
+        opacity: 0.88;
     }
     100% {
         transform: scale(1);
@@ -486,33 +477,25 @@ h3 {
 
 @keyframes logo-phaser-halo {
     0% {
-        opacity: 0.24;
-        transform: scale(0.58);
+        opacity: 0.34;
+        transform: scale(0.66);
         filter:
             var(--logo-tint)
-            blur(3.8px)
-            brightness(1.45)
-            saturate(1.26)
-            drop-shadow(0 0 12px var(--halation-glow));
+            blur(4.2px)
+            brightness(1.38)
+            saturate(1.2)
+            drop-shadow(0 0 13px var(--halation-glow));
     }
-    58% {
-        opacity: 0.46;
-        transform: scale(1.2);
-    }
-    70% {
-        opacity: 0.64;
-        transform: scale(1.34);
+    54% {
+        opacity: 0.62;
+        transform: scale(1.1);
         filter:
             var(--logo-tint)
-            blur(5px)
-            brightness(1.9)
-            saturate(1.5)
+            blur(5.4px)
+            brightness(1.8)
+            saturate(1.45)
             drop-shadow(0 0 26px rgba(106, 176, 255, 0.54))
-            drop-shadow(0 0 28px rgba(255, 223, 92, 0.52));
-    }
-    82% {
-        opacity: 0.38;
-        transform: scale(1.08);
+            drop-shadow(0 0 26px rgba(255, 255, 255, 0.46));
     }
     100% {
         opacity: 0.32;
@@ -528,20 +511,12 @@ h3 {
 
 @keyframes logo-phaser-trail-a {
     0% {
-        opacity: 0.84;
-        transform: scale(0.4);
+        opacity: 0.92;
+        transform: scale(0.48);
     }
-    56% {
-        opacity: 0.62;
-        transform: scale(0.95);
-    }
-    68% {
-        opacity: 0.78;
-        transform: scale(1.24);
-    }
-    78% {
-        opacity: 0.16;
-        transform: scale(1.06);
+    62% {
+        opacity: 0.66;
+        transform: scale(0.9);
     }
     100% {
         opacity: 0;
@@ -551,20 +526,12 @@ h3 {
 
 @keyframes logo-phaser-trail-b {
     0% {
-        opacity: 0.76;
-        transform: scale(0.56);
+        opacity: 0.84;
+        transform: scale(0.64);
     }
-    56% {
-        opacity: 0.56;
-        transform: scale(0.99);
-    }
-    68% {
-        opacity: 0.72;
-        transform: scale(1.18);
-    }
-    78% {
-        opacity: 0.14;
-        transform: scale(1.05);
+    62% {
+        opacity: 0.58;
+        transform: scale(0.92);
     }
     100% {
         opacity: 0;
@@ -574,20 +541,12 @@ h3 {
 
 @keyframes logo-phaser-trail-c {
     0% {
-        opacity: 0.72;
-        transform: scale(0.72);
+        opacity: 0.74;
+        transform: scale(0.78);
     }
-    56% {
-        opacity: 0.54;
-        transform: scale(0.98);
-    }
-    68% {
-        opacity: 0.64;
-        transform: scale(1.14);
-    }
-    78% {
-        opacity: 0.12;
-        transform: scale(1.04);
+    62% {
+        opacity: 0.5;
+        transform: scale(0.94);
     }
     100% {
         opacity: 0;
@@ -597,20 +556,12 @@ h3 {
 
 @keyframes logo-phaser-impact-bloom {
     0% {
-        opacity: 0.16;
-        filter: blur(10px) saturate(1.02);
+        opacity: 0.22;
+        filter: blur(11px) saturate(1.04);
     }
-    58% {
-        opacity: 0.3;
-        filter: blur(16px) saturate(1.1);
-    }
-    70% {
-        opacity: 0.9;
-        filter: blur(30px) saturate(1.4) brightness(1.35);
-    }
-    82% {
-        opacity: 0.42;
-        filter: blur(18px) saturate(1.16);
+    56% {
+        opacity: 0.76;
+        filter: blur(24px) saturate(1.34) brightness(1.28);
     }
     100% {
         opacity: 0.24;
